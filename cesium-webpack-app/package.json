@@ -1,0 +1,22 @@
+{
+  "name": "hallet-cove",
+  "version": "1.0.0",
+  "description": "a 3d geoscience focused map of Hallet Cove created for UniSA Project Live",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/.bin/webpack --config webpack.config.js",
+    "start": "node_modules/.bin/webpack-dev-server --config webpack.config.js --open"
+  },
+  "author": "Joshua Gore",
+  "license": "ISC",
+  "devDependencies": {
+    "cesium": "^1.54.0",
+    "copy-webpack-plugin": "^5.0.0",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}
