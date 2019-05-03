@@ -18,5 +18,9 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "mapillary-js": "^2.18.0",
+    "webpack-dev-server": "^3.3.1"
   }
 }
