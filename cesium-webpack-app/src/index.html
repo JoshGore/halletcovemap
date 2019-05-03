@@ -6,8 +6,15 @@
         <meta name="viewport"
               content-"width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
         <title>Hallet Cove Geoscience</title>
+        <style>
+            html, body { margin: 0; padding: 0; height: 100%; }
+            #cesiumContainer { position: absolute; height: 100%; width: 100% }
+            #mapillary { position: absolute; bottom: 0; height: 100%; width: 100%; z-index: 0; opacity: 0; transition: opacity 0.5s, z-index 0s; transition-delay: 0s, 0.5s }
+            #mapillary.show { opacity: 1; z-index: 10; transition: opacity 0.5s, z-index 0s; transition-delay: 0s, 0s }
+        </style>
     </head>
-    <body>
+    <body style="height: 100%; width: 100%">
+        <div id="mapillary" class=""></div>
         <div id="cesiumContainer"></div>
         <div id="credits" style="display: none"></div>
     </body>

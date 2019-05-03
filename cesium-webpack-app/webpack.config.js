@@ -60,7 +60,9 @@ module.exports = {
         new webpack.DefinePlugin({
             // Define relative base path in cesium for loading assets
             CESIUM_BASE_URL: JSON.stringify('')
-        })
+        }),
+        // copy geojson files to static directory 
+        new CopywebpackPlugin([ { from: 'data/mapillaryimages.geojson', to: 'data/mapillaryimages.geojson' } ]),
     ],
     // development server options
     devServer: {
